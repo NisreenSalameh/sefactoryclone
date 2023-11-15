@@ -633,6 +633,10 @@ button{
     font-weight: 600;
 }
 
+.active{
+    background-color: #363738;
+}
+
 
 /******************* Contact us Section **********************/
 .section-b-contactus{
