@@ -28,8 +28,6 @@ function prevTestimonial() {
 }
 
 showTestimonial(currentIndex);
-
-// Auto sliding functionality
 setInterval(nextTestimonial, 4000);
 
 function currentSlide(index) {
@@ -37,7 +35,7 @@ currentIndex = index;
 showTestimonial(currentIndex);
 }
 
-
+//Adding the color overlay animation
 var overlay = document.querySelector('.color-overlay');
 var heroDescriptionLeft = document.querySelector('.hero-description-left');
 var heroLeftSecondSpan = document.querySelector('.hero-left-second-span');
@@ -49,7 +47,6 @@ setInterval(function() {
     
     overlay.style.backgroundColor = colors[currentIndex];
 
-    // Update text content based on the current color
     if (colors[currentIndex] === '#28eea9e9') {
         heroLeftSecondSpan.textContent = 'Software Engineer?';
         heroDescriptionLeft.style.color = 'black'; 
