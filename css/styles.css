@@ -1067,7 +1067,7 @@ footer{
     display: inline-block;
   }
 
-  /* Style for the dropdown button and icon */
+
   .dropdown-btn {
     background-color: #232323;
     color: white;
@@ -1084,7 +1084,7 @@ footer{
     justify-content: space-between;
   }
 
-  /* Style for the dropdown icon */
+  
   .dropdown-icon {
     position: absolute;
     top: 50%;
@@ -1095,7 +1095,7 @@ footer{
     margin: 12px 20px 12px 0;
   }
 
-  /* Style for the dropdown content */
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -1108,14 +1108,12 @@ footer{
     color: white;
   }
 
-  /* Style for the dropdown links */
   .dropdown-content p {
     color: white;
     margin-bottom: 15px;
     height: fit-content;
   }
 
-  /* Show the dropdown content when the dropdown button is clicked */
   .dropdown.active .dropdown-content {
     display: block;
   }
