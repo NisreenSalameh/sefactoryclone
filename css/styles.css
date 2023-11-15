@@ -23,6 +23,13 @@ button{
     color:#363738;
 }
 
+.white-dot{
+    height: 24px;
+    width: 24px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
 /******************* Hero Section **********************/
 .hero-parent{
     display: flex;
@@ -395,6 +402,127 @@ iframe{
     flex-direction: column;
     width: 245px;
     border-radius: 20px;
+}
+
+/******************* Hire Talent Section **********************/
+.section-b-hire-talent{
+    background-color: #363738;
+    height: 784px;
+    width:100vw;
+    padding: 70px 0 70px 0;
+    color: white;
+}
+
+.hiretalent-child-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hire-talent-layout{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    width: 1000px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.hire-talent-upper{
+    height: 450px;
+    width:1000px;
+    
+}
+
+.hire-talent-lower{
+    height: 80px;
+    width: 1000px;
+}
+
+.ht-upper-banner{
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    width:1076px;
+    margin: 0 0 20px -35px;
+    padding: 40px 40px 80px 40px;
+    background-color: #232323;
+    border-radius: 20px;
+    gap:20px;
+}
+
+.rp-heading{
+    font-size: 22px;
+    text-align: left;
+    font-weight: 900;
+}
+
+.rp-subtitle{
+    background-color: #363738;
+    font-size: 16px;
+    text-align: left;
+    height: 52px;
+    width:740px;
+    padding: 15px 20px 15px 20px;
+}
+.ht-span{
+    font-size: 16px;
+    font-weight: 900;
+    color:#28eea7;
+}
+
+.rp-texts{
+    font-size: 14px;
+    text-align: left;
+    height: 125px;
+    width: 996px;
+}
+
+.rp-texts > ol{
+    height: 84px;
+    width:996px;
+    margin: 0 0 10px 0;
+    padding: 0 0 0 40px;
+    text-align: left;
+}
+
+.contact-btn{
+    background-color: #363738;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 800;
+    height: 46px;
+    width: 996px;
+    padding: 15px 20px 40px 20px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.hire-talent-lower{
+    height: 80px;
+    width: 1076px;
+    
+}
+
+.ht-lower-banner{
+    background-color: #232323;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    top:-29%;
+    padding: 20px 40px 20px 40px;
+    border-radius: 20px;
+}
+
+.ht-lower-banner > span{
+    font-size: 22px;
+    font-weight: 300;
+    text-align: left;
 }
 
 /******************* Partners Section **********************/
