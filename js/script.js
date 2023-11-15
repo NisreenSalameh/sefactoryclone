@@ -36,3 +36,28 @@ function currentSlide(index) {
 currentIndex = index;
 showTestimonial(currentIndex);
 }
+
+
+var overlay = document.querySelector('.color-overlay');
+var heroDescriptionLeft = document.querySelector('.hero-description-left');
+var heroLeftSecondSpan = document.querySelector('.hero-left-second-span');
+var colors = ['#28eea9e9', '#af28eeb4', '#ff0088c3']; 
+var intervalDuration = 3000;
+
+setInterval(function() {
+    var currentIndex = Math.floor((Date.now() / intervalDuration) % colors.length);
+    
+    overlay.style.backgroundColor = colors[currentIndex];
+
+    // Update text content based on the current color
+    if (colors[currentIndex] === '#28eea9e9') {
+        heroLeftSecondSpan.textContent = 'Software Engineer?';
+        heroDescriptionLeft.style.color = 'black'; 
+    } else if (colors[currentIndex] === '#af28eeb4') {
+        heroLeftSecondSpan.textContent = 'Data Engineer?';
+        heroDescriptionLeft.style.color = 'white'; 
+    } else {
+        heroLeftSecondSpan.textContent = 'UI/UX Designer?';
+        heroDescriptionLeft.style.color = 'white';
+    }
+}, intervalDuration);

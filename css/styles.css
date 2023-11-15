@@ -74,7 +74,8 @@ button{
 .hero-title-left{
     height: 96px;
     width: 410px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     font-weight: 900;
     text-align: right;
     text-transform: uppercase;
@@ -86,6 +87,8 @@ button{
     color:white;
     font-size: 24px;
     padding: 0 10px 0 10px;
+    width: 260px;
+    align-self: flex-end;
 }
 
 .hero-left-second-span{
