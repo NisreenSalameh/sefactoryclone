@@ -1058,3 +1058,110 @@ footer{
     color: #fcfcfc;
     font-weight: 900;
 }
+
+
+
+/******************* FAQs Section **********************/
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Style for the dropdown button and icon */
+  .dropdown-btn {
+    background-color: #232323;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    height: 70px;
+    width: 1067px;
+    padding: 0 24px 12px 24px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Style for the dropdown icon */
+  .dropdown-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    height: 16px;
+    width:16px;
+    margin: 12px 20px 12px 0;
+  }
+
+  /* Style for the dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #232323;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 300px;
+    padding: 30px;
+    width: 1065px;
+    color: white;
+  }
+
+  /* Style for the dropdown links */
+  .dropdown-content p {
+    color: white;
+    margin-bottom: 15px;
+    height: fit-content;
+  }
+
+  /* Show the dropdown content when the dropdown button is clicked */
+  .dropdown.active .dropdown-content {
+    display: block;
+  }
+
+.section-b-faq{
+    background-color: #363738;
+    height: 546px;
+    width: 100vw;
+    padding: 70px 0 70px 0;
+}
+
+.faq-child-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faqs-container{
+    height: 313px;
+    width:1076px;
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.faqs-lowerbanner{
+    height: 46px;
+    width: 1076px;
+    margin: 24px 0 0 0;
+    padding: 15px 20px 15px 20px;
+    background-color: #232323;
+    color: #fcfcfc;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.faq-collection{
+    height: 297px;
+    width: 1076px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.white-txt{
+    color:white;
+}

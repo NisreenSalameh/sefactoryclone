@@ -58,3 +58,9 @@ setInterval(function() {
         heroDescriptionLeft.style.color = 'white';
     }
 }, intervalDuration);
+
+
+function toggleDropdown(dropdownId) {
+    var dropdown = document.getElementById(dropdownId);
+    dropdown.classList.toggle("active");
+  }
