@@ -1,6 +1,6 @@
+//slides animation
 let currentIndex = 0;
 let testimonials = document.querySelectorAll('.testimonials-slide');
-
 
 function showTestimonial(index) {
     testimonials.forEach(function (testimonial) {
@@ -37,8 +37,6 @@ showTestimonial(currentIndex);
 
 //Adding the color overlay animation
 let overlay = document.querySelector('.color-overlay');
-let heroDescriptionLeft = document.querySelector('.hero-description-left');
-let heroLeftSecondSpan = document.querySelector('.hero-left-second-span');
 let colors = ['#28eea9e9', '#af28eeb4', '#ff0088c3']; 
 let intervalDuration = 3000;
 
@@ -48,16 +46,55 @@ setInterval(function() {
     overlay.style.backgroundColor = colors[currentIndex];
 
     if (colors[currentIndex] === '#28eea9e9') {
-        heroLeftSecondSpan.textContent = 'Software Engineer?';
         heroDescriptionLeft.style.color = 'black'; 
     } else if (colors[currentIndex] === '#af28eeb4') {
-        heroLeftSecondSpan.textContent = 'Data Engineer?';
         heroDescriptionLeft.style.color = 'white'; 
     } else {
-        heroLeftSecondSpan.textContent = 'UI/UX Designer?';
         heroDescriptionLeft.style.color = 'white';
     }
 }, intervalDuration);
+
+//adding the texts animation
+const sentences = [
+    'Software Engineer?',
+    'Data Engineer?',
+    'UIUX DESIGNER?'
+  ];
+  
+  let currentWordIndex = 0;
+  let offset = 0;
+  const sentenceElement = document.querySelector('.hero-left-second-span');
+  let forwards = true;
+  let skipCount = 0;
+  const skipDelay = 5;
+  const speed = 70;
+
+  const updateSentence = () => {
+    sentenceElement.textContent = sentences[currentWordIndex].substring(0, offset);
+  };
+
+  const handleAnimation = () => {
+    if (forwards) {
+      if (offset >= sentences[currentWordIndex].length) {
+        if (++skipCount === skipDelay) {
+          forwards = false;
+          skipCount = 0;
+        }
+      }
+    } else if (offset === 0) {
+      forwards = true;
+      currentWordIndex = (currentWordIndex + 1) % sentences.length;
+    }
+
+    if (skipCount === 0) {
+      forwards ? offset++ : offset--;
+    }
+
+    updateSentence();
+  };
+
+  setInterval(handleAnimation, speed);
+
 
 
 function toggleDropdown(dropdownId) {

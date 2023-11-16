@@ -95,6 +95,20 @@ button{
     font-size: 36px;
     color: white;
 }
+.hero-left-second-span::after {
+    content: '';
+    position: absolute;
+    animation: blink 0.5s linear infinite;
+  }
+  
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
 
 .hero-description-left{
     height: 96px;
