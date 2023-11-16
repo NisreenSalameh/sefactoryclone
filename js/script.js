@@ -64,3 +64,17 @@ function toggleDropdown(dropdownId) {
     let dropdown = document.getElementById(dropdownId);
     dropdown.classList.toggle("active");
   }
+
+
+
+// Function to toggle the menu visibility
+function toggleMenu() {
+    let modal = document.getElementById("myModal");
+    modal.style.display = (modal.style.display === "none" || modal.style.display === "") ? "block" : "none";
+}
+
+// Function to close the modal
+function closeModal() {
+    let modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}

@@ -220,6 +220,117 @@ button{
     vertical-align: middle;
 }
 
+.modal {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #35353585;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 8px;
+    width:100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container{
+    display: flex;
+    gap:400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    position: absolute;
+    font-size: 40px;
+    cursor: pointer;
+    color:#cccccc;
+}
+
+.modal-close-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-left li{
+    list-style: none;
+    color:#cccccc;
+    font-weight: 800;
+    line-height: 30px;
+}
+.modal-left li:nth-child(1){
+    color:#28eea7;
+}
+
+.modal-right{
+    width:500px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    margin-top: 100px;
+}
+
+.account{
+    background-color: #232323;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+    gap:80px;
+}
+
+.account-texts{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.account-title{
+    color:white;
+}
+
+.account-texts > p{
+    color:#a5a6a9;
+}
+
+.modal-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.modal-first-btn,
+.modal-second-btn{
+    height: 40px;
+    width: 400px;
+    font-weight: 800;
+}
+.modal-first-btn{
+    background-color: #28eea7;
+}
+
+.block {
+    display: block;
+}
+
 /******************* Hello World Section **********************/
 .section-b-hello-world{
     height: 880px;

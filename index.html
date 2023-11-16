@@ -54,9 +54,55 @@
     </div>
     <div class="navigation-tab">
         <img class="hero-logo" src="assets/images/logosef.svg" alt="se-logo">
-        <button class="ham-menu-btn">
+        <button class="ham-menu-btn" onclick="toggleMenu()">
             <img src="assets/images/ham-menu-icon.svg" class="ham-menu">
         </button>
+    </div>
+
+    <!-- Your modal content -->
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <div class="navigation-tab">
+                <img class="hero-logo" src="assets/images/logosef.svg" alt="se-logo">
+                <button class="ham-menu-btn modal-close-btn">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                </button>
+            </div>
+            <div class="modal-container">
+               <div class="modal-left">
+                <ul>
+                    <li>Home</li>
+                    <li>Hello world!</li>
+                    <li>Milestones</li>
+                    <li>Programs</li>
+                    <li>Hire talents</li>
+                    <li>Testimonials</li>
+                    <li>FAQs</li>
+                    <li>Contact us</li>
+                    <li>Partners</li>
+                    <li>Newsletter</li>
+                </ul>
+            </div>
+            <div class="modal-right">
+                <div class="modal-right-upper">
+                    <div class="account">
+                        <div class="account-texts">
+                            <h2 class="account-title">> Account</h2>
+                            <p>/* Login with existing or create a new account in order to apply to SEF programs */</p>
+                        </div>
+                        <div class="modal-btns">
+                            <button class="modal-first-btn">LOG IN</button>
+                            <button class="modal-second-btn">SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-right-lower">
+                    <img src="assets/images/hrlogo.svg">
+                </div>
+            </div> 
+            </div>
+            
+        </div>
     </div>
 
     <!--Hello World Section-->
