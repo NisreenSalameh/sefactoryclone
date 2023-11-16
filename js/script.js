@@ -1,5 +1,5 @@
-var currentIndex = 0;
-var testimonials = document.querySelectorAll('.testimonials-slide');
+let currentIndex = 0;
+let testimonials = document.querySelectorAll('.testimonials-slide');
 
 
 function showTestimonial(index) {
@@ -9,7 +9,7 @@ function showTestimonial(index) {
 
     testimonials[index].style.display = 'flex';
 
-    var dots = document.querySelectorAll('.slider-dot');
+    let dots = document.querySelectorAll('.slider-dot');
     dots.forEach(function (dot) {
         dot.classList.remove('active');
     });
@@ -36,14 +36,14 @@ showTestimonial(currentIndex);
 }
 
 //Adding the color overlay animation
-var overlay = document.querySelector('.color-overlay');
-var heroDescriptionLeft = document.querySelector('.hero-description-left');
-var heroLeftSecondSpan = document.querySelector('.hero-left-second-span');
-var colors = ['#28eea9e9', '#af28eeb4', '#ff0088c3']; 
-var intervalDuration = 3000;
+let overlay = document.querySelector('.color-overlay');
+let heroDescriptionLeft = document.querySelector('.hero-description-left');
+let heroLeftSecondSpan = document.querySelector('.hero-left-second-span');
+let colors = ['#28eea9e9', '#af28eeb4', '#ff0088c3']; 
+let intervalDuration = 3000;
 
 setInterval(function() {
-    var currentIndex = Math.floor((Date.now() / intervalDuration) % colors.length);
+    let currentIndex = Math.floor((Date.now() / intervalDuration) % colors.length);
     
     overlay.style.backgroundColor = colors[currentIndex];
 
@@ -61,6 +61,6 @@ setInterval(function() {
 
 
 function toggleDropdown(dropdownId) {
-    var dropdown = document.getElementById(dropdownId);
+    let dropdown = document.getElementById(dropdownId);
     dropdown.classList.toggle("active");
   }
