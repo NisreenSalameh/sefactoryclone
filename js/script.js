@@ -39,6 +39,7 @@ showTestimonial(currentIndex);
 let overlay = document.querySelector('.color-overlay');
 let colors = ['#28eea9e9', '#af28eeb4', '#ff0088c3']; 
 let intervalDuration = 3000;
+let heroDescriptionLeft = document.querySelector('.hero-description-left');
 
 setInterval(function() {
     let currentIndex = Math.floor((Date.now() / intervalDuration) % colors.length);
@@ -119,41 +120,53 @@ function closeModal() {
 
 //Programs functionality
 
-//tabs colors
 const programTabs = document.querySelectorAll('.tab');
 let currentTab = null;
+const programsSection = document.querySelector('.section-b-programs');
 
 programTabs.forEach(tab => {
   tab.addEventListener('click', function () {
-
     if (currentTab) {
       currentTab.classList.remove('active-program');
-      currentTab.querySelector('span').style.color = ''; 
+      currentTab.querySelector('span').style.color = '';
     }
 
     tab.classList.add('active-program');
     currentTab = tab;
 
     const tabText = tab.textContent.trim();
+    const titleSpan = document.querySelector('.title-span');
+    const programSpan = document.querySelector('.program-span');
+
     switch (tabText) {
       case 'FCS':
         tab.querySelector('span').style.color = '#ffc635';
+        programsSection.style.backgroundColor = '#ffc635';
+        titleSpan.style.color = '#ffc635';
+        programSpan.style.color = '#ffc635';
         break;
       case 'FSW':
         tab.querySelector('span').style.color = '#28eea7';
+        programsSection.style.backgroundColor = '#28eea7';
+        programSpan.style.color = '#28eea7';
         break;
       case 'FSD':
         tab.querySelector('span').style.color = '#9864da';
+        programsSection.style.backgroundColor = '#9864da';
+        titleSpan.style.color = '#9864da';
+        programSpan.style.color = '#9864da';
         break;
       case 'UIX':
         tab.querySelector('span').style.color = '#fb508e';
+        programsSection.style.backgroundColor = '#fb508e';
+        titleSpan.style.color = '#fb508e';
+        programSpan.style.color = '#fb508e';
         break;
       default:
         break;
     }
   });
 });
-
 
 
 //container contents
