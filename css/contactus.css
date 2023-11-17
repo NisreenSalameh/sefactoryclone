@@ -1,0 +1,159 @@
+.section-b-contactus{
+    background-color: #28eea7;
+    height: 846px;
+    width: 100vw;
+    display: flex;
+    padding: 70px 0 70px 0;
+    justify-content: center;
+}
+.contact-title{
+    background-color: #363738;
+    color: #fcfcfc;
+}
+
+.contactus-child-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactus-wrapper{
+    height: 612px;
+    width: 1076px;
+    display: flex;
+    gap:20px;
+    margin: 50px 0 0 0;
+}
+
+.contactus-left{
+    background-color: #363738;
+    height: 612px;
+    width: 320px;
+    padding: 30px 40px 40px 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contactus-right{
+    background-color: #363738;
+    width: 736px;
+    height: 612px;
+    padding: 30px 40px 40px 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.contactus-left-upper{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.directions-span{
+    font-size: 14px;
+    font-weight: 900;
+    text-align: left;
+    color: #a5a6a9;
+}
+
+.directions-span-lower{
+    color:#f1f2f3;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.contactus-left-lower > p{
+    color: #a5a6a9;
+    text-align: left;
+}
+
+iframe{
+    border-radius: 10px;
+}
+
+.contactus-right-title > p{
+    color:#a5a6a9;
+    font-size: 14px;
+    font-weight: 900;
+    text-align: left;
+}
+.contactus-right-title > h3{
+    color:#28eea7;
+    font-size: 24px;
+}
+
+.contact-form{
+    color:white;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.contact-name,
+.contact-email-nb{
+    display: flex;
+    justify-content: space-between;
+}
+.first-name,
+.last-name,
+.email,
+.phone-nb{
+    display: flex;
+    flex-direction: column;
+    height: 67px;
+    width: 318px;
+}
+.programs-input{
+    display: flex;
+    flex-direction: column;
+    width: 656px;
+    height: 42px;
+}
+.courses-labels{
+    display: flex;
+    align-items: center;
+    gap:40px;
+    margin-left: 20px;
+}
+
+.program-radio{
+    height: 12px;
+    width: 12px;
+    border: 1px solid #cccccc;
+    margin: 3px 0 0 -20px;
+    float: left;
+    cursor: default;
+}
+
+.name-input,
+.contact-email-input,
+.nb-input{
+    height: 45px;
+}
+
+.contact-txt-input{
+    display: flex;
+    flex-direction: column;
+}
+.txt-input{
+    height: 120px;
+}
+
+.submit-btn{
+    height: 44px;
+    width:91px;
+    padding: 15px 20px 15px 20px;
+    background-color: #28eea7;
+    color: #363738;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    align-self: flex-end;
+}

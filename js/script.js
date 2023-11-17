@@ -111,7 +111,6 @@ function toggleMenu() {
     modal.style.display = (modal.style.display === "none" || modal.style.display === "") ? "block" : "none";
 }
 
-// Function to close the modal
 function closeModal() {
     let modal = document.getElementById("myModal");
     modal.style.display = "none";
@@ -119,7 +118,6 @@ function closeModal() {
 
 
 //Programs functionality
-
 const programTabs = document.querySelectorAll('.tab');
 let currentTab = null;
 const programsSection = document.querySelector('.section-b-programs');
@@ -169,7 +167,7 @@ programTabs.forEach(tab => {
 });
 
 
-//container contents
+
 const tabContents = {
   'FCS': {
     header: '<h2><span class="title-span">> FCS:</span> Foundations of Computer Science</h2>',

@@ -1,0 +1,132 @@
+.section-b-programs{
+    background-color: #28eea7;
+    height: 735px;
+    width: 100vw;
+    padding: 70px 0 70px 0;
+}
+
+.programs-child-container{
+    height: 596px;
+    width: 1320px;
+    padding:  0 70px 0 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabs-row{
+    height:56px;
+    width:1076px;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+}
+
+.tab{
+    height: 56px;
+    width: 129px;
+    padding: 20px 50px 20px 50px;
+    cursor: pointer;
+}
+.tab >span{
+    color:#363738;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+
+.programs-contents{
+    background-color: #363738;
+    padding: 20px 20px 20px 20px;
+    height: 446px;
+    width: 1076px;
+    display: flex;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.programs-left{
+    height: 406px;
+    width: 597px;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.programs-header{
+    color: #ffffff;
+    height: 31px;
+    width: 567px;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: left;
+}
+.title-span {
+    color:#28eea7;
+}
+
+.programs-left{
+    font-size: 14px;
+    text-align: left;
+    height: 231px;
+    width: 567px;
+    margin: 0 0 10px 0;
+    color:white;
+    gap: 30px;
+}
+
+.progress-lower{
+    height: 46px;
+    width: 557px;
+    display: flex;
+    gap:20px;
+}
+
+.progress-lower-left{
+    height: 46px;
+    width:360px;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    background-color: #232323;
+    padding: 10px 20px 10px 20px;
+}
+.program-span{
+    color:#28eea7;
+    font-weight: 900;
+}
+
+.progress-btn{
+    background-color: #232323;
+    text-align: right;
+    font-weight: 800;
+    text-transform: uppercase;
+    height:46px;
+    width: 197px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    font-weight: 800;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.programs-right{
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 70px;
+}
+
+.active-program{
+    background-color: #363738;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.program-fsw-span{
+    color:#28eea7;
+}
+
+.program-fsw-span{
+    color:#28eea7;
+}
