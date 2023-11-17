@@ -28,7 +28,8 @@
     transform: translateY(-50%);
     height: 16px;
     width:16px;
-    margin: 12px 20px 12px 0;
+    margin: -8px 20px 20px 0;
+    color: #28eea7;
   }
 
 

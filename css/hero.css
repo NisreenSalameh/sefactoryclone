@@ -248,10 +248,15 @@
 
 .modal-left li{
     list-style: none;
-    color:#cccccc;
+    color:#b3b3b3;
     font-weight: 800;
     line-height: 30px;
+    cursor: pointer;
 }
+.modal-left li:hover{
+    color:#ffffff;
+}
+
 .modal-left li:nth-child(1){
     color:#28eea7;
 }
@@ -303,6 +308,7 @@
     height: 40px;
     width: 400px;
     font-weight: 800;
+    cursor: pointer;
 }
 .modal-first-btn{
     background-color: #28eea7;

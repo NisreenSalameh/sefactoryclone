@@ -51,6 +51,7 @@ footer{
 .footer-right > img{
     height: 100px;
     width: 100px;
+    cursor: pointer;
 }
 .footer-socials{
     height: 34px;
@@ -64,6 +65,10 @@ footer{
     margin: 0 0 0 12px;
     padding: 5px 5px 5px 5px;
     border-radius: 5px;
+    background-color: #a5a5a5;
+}
+.socials-btn:hover{
+    background-color: #fcfcfc;
 }
 
 .footer-left-left{
@@ -87,4 +92,10 @@ footer{
 .footer-title{
     color: #fcfcfc;
     font-weight: 900;
+}
+
+.footer-left-left a:hover,
+.footer-left-right a:hover{
+    cursor: pointer;
+    color: #ffffff;
 }
