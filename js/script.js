@@ -38,7 +38,7 @@ showTestimonial(currentIndex);
 //Adding the color overlay animation
 let overlay = document.querySelector('.color-overlay');
 let colors = ['#28eea9e9', '#af28eeb4', '#ff0088c3']; 
-let intervalDuration = 3000;
+let intervalDuration = 2500;
 let heroDescriptionLeft = document.querySelector('.hero-description-left');
 
 setInterval(function() {
