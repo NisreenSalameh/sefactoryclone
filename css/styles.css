@@ -41,7 +41,7 @@ button{
 .hero-left{
     display: flex;
     width:50%;
-    background-image: url(/assets/images/se2.jpeg);
+    background-image: url("../assets/images/se2.jpeg");
     background-size: cover;
 }
 
@@ -135,7 +135,7 @@ button{
     display: flex;
     width:50%;
     padding: 120px 0 60px 0;
-    background-image: url(/assets/images/se1.jpeg);
+    background-image: url("../assets/images/se1.jpeg");
     background-size: cover;
     flex-direction: column;
     justify-content: center;
